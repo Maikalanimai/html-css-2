@@ -1,0 +1,85 @@
+html {
+    background: lightgray;
+}
+
+body {
+    height: 200vh;
+}
+
+.outer-box {
+    width: 500px;
+    height: 500px;
+    background: tomato;
+    position: relative;
+}
+
+.inner-box {
+    width: 30%;
+    height: 30%;
+    background: lemonchiffon;
+    /* position: static;  the default*/
+    position: relative;
+    /* top: 0; */
+    /* bottom: 50px; */
+    /* left: 50px; */
+    /* right: 50px; */
+    left: 50px;
+    z-index: 0;
+}
+
+.absolute-box {
+    width: 150px;
+    height: 150px;
+    background: goldenrod;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.fixed-box {
+    width: 600px;
+    height: 100px;
+    background: seagreen;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.sticky-box {
+    height: 80px;
+    width: 100%;
+    background: gray;
+    position: sticky;
+    top: 0;
+}
+
+.display-box {
+    width: 50%;
+    height: 500px;
+    background: firebrick;
+}
+
+.block{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    /* display: block; the default */
+}
+
+.inline {
+    width: 100px;
+    height: 100px;
+    /* inline elements cant use height and width */
+     /* only take space of their content */
+    background: violet;
+    display: inline;
+    margin: 50px;
+    padding: 1rem;
+}
+
+.inline-block {
+    width: 100px;
+    height: 100px;
+    background: teal;
+    display: inline-block;
+}
